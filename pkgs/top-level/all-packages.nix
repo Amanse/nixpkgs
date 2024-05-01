@@ -37614,6 +37614,10 @@ with pkgs;
 
   umoria = callPackage ../games/umoria { };
 
+  umu-unwrapped = callPackage ../by-name/um/umu/package.nix { };
+
+  umu = callPackage ../by-name/um/umu/fhsenv.nix { package = umu-unwrapped; };
+
   unnethack = callPackage ../games/unnethack { };
 
   uqm = callPackage ../games/uqm { };
